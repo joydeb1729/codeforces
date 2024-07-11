@@ -1,0 +1,68 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+typedef long long ll;
+
+#define sp      " "
+#define nl      '\n'
+#define psp     cout << " "
+#define pnl     cout << '\n'
+#define imax    INT_MAX
+#define imin    INT_MIN
+#define pb      push_back
+#define ppb     pop_back
+#define pf      push_front
+#define yes     cout << "YES" << endl
+#define no      cout << "NO" << endl
+#define pmn     cout << "-1" << endl
+#define pone    cout << "1" << endl
+#define pcount  cout << count << endl
+#define pzero   cout << "0" << endl
+
+const int M = 200010;
+
+vector<ll>sum(M);
+
+void solve() {
+
+    int n, i, a;
+    vector<int> vec;
+
+    cin >> n;
+
+    cout<<sum[n]<<nl;
+    
+}
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
+
+    for(int i=0; i<M; i++)
+    {
+        int x=0;
+        
+        for(int j=1; j<=i; j++)
+        {
+            int temp=j;
+            while(temp>0)
+            {
+                x+=temp%10;
+                temp/=10;
+            }
+        }
+
+        sum[i]=x;
+    }
+
+
+    int t;
+    cin >> t;
+    while (t--) {
+        solve();
+    }
+
+    return 0;
+}
